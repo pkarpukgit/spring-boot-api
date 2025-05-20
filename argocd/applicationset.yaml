@@ -21,12 +21,12 @@ spec:
     spec:
       project: '{{env}}-project'
       source:
-        repoURL: https://github.com/your-username/spring-boot-api
+        repoURL: git@github.com:pkarpukgit/spring-boot-api.git
         targetRevision: HEAD
         path: helm-chart
         helm:
           valueFiles:
-            - ../../envs/{{env}}/values.yaml
+            - ../envs/{{env}}/values.yaml
       destination:
         server: https://kubernetes.default.svc
         namespace: '{{namespace}}'

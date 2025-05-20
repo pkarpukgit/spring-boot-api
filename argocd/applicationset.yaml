@@ -24,7 +24,7 @@ spec:
         path: .
         helm:
           valueFiles:
-            - ../envs/{{env}}/values.yaml
+            - envs/{{env}}/values.yaml
       destination:
         server: https://kubernetes.default.svc
         namespace: '{{namespace}}'

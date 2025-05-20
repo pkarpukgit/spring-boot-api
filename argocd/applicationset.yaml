@@ -7,12 +7,10 @@ spec:
   generators:
     - list:
         elements:
-          - cluster: default
-          #- cluster: dev-global-cluster-0
+          - cluster: dev-global-cluster-0
             env: dev
             namespace: spring-boot-api-dev
-          - cluster: default
-          #- cluster: prd-global-cluster-5
+          - cluster: prd-global-cluster-5
             env: prd
             namespace: spring-boot-api-prd
   template:
@@ -23,7 +21,7 @@ spec:
       source:
         repoURL: git@github.com:pkarpukgit/spring-boot-api.git
         targetRevision: HEAD
-        path: helm-chart
+        path: ./
         helm:
           valueFiles:
             - ../envs/{{env}}/values.yaml

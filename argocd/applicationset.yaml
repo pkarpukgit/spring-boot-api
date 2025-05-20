@@ -21,7 +21,7 @@ spec:
       source:
         repoURL: git@github.com:pkarpukgit/spring-boot-api.git
         targetRevision: HEAD
-        path: ./
+        path: .
         helm:
           valueFiles:
             - ../envs/{{env}}/values.yaml

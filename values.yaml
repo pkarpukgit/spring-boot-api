@@ -28,4 +28,4 @@ ports:
     containerPort: 8082
     path: /soap
 
-env: []
+#env: []

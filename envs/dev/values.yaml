@@ -1,3 +1,3 @@
 env: dev
-replicaCount: 3
+replicaCount: 1
 host: dev.spring-boot-api.example.com

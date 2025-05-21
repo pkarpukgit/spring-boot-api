@@ -1,3 +1,3 @@
 env: prd
-replicaCount: 1
+replicaCount: 5
 host: prd.spring-boot-api.example.com

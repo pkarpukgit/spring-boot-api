@@ -25,8 +25,8 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           command: ["sh", "-c"]
-          args:
-            - echo "Starting Spring Boot with profile --spring.profiles.active={{ .Values.env }}" && sleep 3600
+          args: ["sleep 3600"]
+          #  - echo "Starting Spring Boot with profile --spring.profiles.active={{ .Values.env }}" && sleep 3600
           env:
             - name: POD_IP
               valueFrom:

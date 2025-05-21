@@ -24,6 +24,7 @@ spec:
         - name: spring-boot-api
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
+          command: ["sleep 600"]
           #command: ["sh", "-c"]
           #args:
           #  - echo "Starting Spring Boot with profile --spring.profiles.active={{ .Values.env }}" && sleep 60
